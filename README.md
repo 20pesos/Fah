@@ -1,14 +1,60 @@
-# Lab Activity 1: Software Relevant Tools, Standards, and Code Versioning using GitHub
+<img src="README_visuals/Image1.png">
 
-> **Note to Instructor:** Parts of this documentation were assisted by AI to help ensure accurate technical terminology.
+> **Note:** Parts of this documentation were assisted by AI to help ensure correctness.
 
-**Author:** Jethro Caldoza Naungayan
+**Author:** Jethro C. Naungayan
+
+**Course & Block:** CPE106L-4_B1
 
 ## Overview
 
-This repository documents the completion of Lab Activity 1 for **CPE106L-4 Software Design Laboratory**. The activity focused on preparing a clean Python laboratory workspace, using an isolated Python environment, organizing source and test files, establishing a Git repository, and recording evidence of basic version-control operations.
+This repository reports the completion of Lab Activity 1. The activity focused on creating a clean Python lab workspace in WSL, initializing a virtual environment, setting up a Git repository, and recording evidence of basic version control operations. To demonstrate the requirements, a command line application that checks whether an input is an odd or an even number was used as the Python program.
 
-A command-line application (Odd & Even Number Checker) was used as the Python program for demonstrating the required workspace, execution, testing, documentation, and Git workflow.
+This README specifically explains how to run the activity starting from zero.
+
+## Prerequisites
+
+This activity was done on Windows. To do the activity, our system must be configured with the necessary tools.
+
+**1. Install Windows Subsystem for Linux (WSL)**
+Open Windows PowerShell as an Administrator and run the following command:
+```powershell
+wsl --install -d Ubuntu
+```
+**2. Update Ubuntu Packages**
+```bash
+sudo apt update
+```
+**3. Install Python and Virtual Environment Tools**
+```bash
+sudo apt install python3 python3-venv -y
+```
+**4. Create Workspace and Open VS Code**
+```bash
+mkdir Naungayan_Jethro_labactivity1   # Creates the main project folder
+cd Naungayan_Jethro_labactivity1      # Moves your terminal inside the new folder
+code .                                # Opens this specific folder in VS Code
+```
+
+## How to Run the Activity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Laboratory Environment
 
