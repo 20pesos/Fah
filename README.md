@@ -14,7 +14,11 @@ This README specifically explains how to run the activity starting from zero.
 
 ## Prerequisites
 
-This activity was done on Windows. To do the activity, our system must be configured with the necessary tools. Open Windows PowerShell as an Administrator (necessary for step 1) and run the following commands:
+This activity was done on Windows. To do the activity, our system must be configured with the necessary tools. 
+
+<img src="README_visuals/Image2.png">
+
+Open Windows PowerShell as an Administrator (necessary for step 1) and run the following commands:
 
 **1. Install Windows Subsystem for Linux (WSL)**
 ```powershell
