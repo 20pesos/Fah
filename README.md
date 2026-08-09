@@ -12,6 +12,12 @@ This repository reports the completion of Lab Activity 1. The activity focused o
 
 This README specifically explains how to run the activity starting from zero.
 
+## Project Structure
+
+Here is how the files are organized within this repository:
+
+<img src="README_visuals/Image6.png">
+
 ## Prerequisites
 
 This activity was done on Windows. To do the activity, our system must be configured with the necessary tools. 
