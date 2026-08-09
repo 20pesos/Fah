@@ -65,7 +65,7 @@ python3 source/main.py
 ```
 Write an input and click enter.
 
-
+<img src="README_visuals/Image4.png">
 
 An example can be seen below:
 
