@@ -39,6 +39,12 @@ cd Naungayan_Jethro_labactivity1      # Moves your terminal inside the new folde
 code .                                # Opens this specific folder in VS Code
 ```
 
+## Project Structure
+
+Here is how the files are organized within this repository:
+
+<img src="README_visuals/Image6.png">
+
 ## How to Run the Activity (for Windows Users)
 
 Open Windows PowerShell and run the following commands:
@@ -51,15 +57,9 @@ cd ~  # Brings you to the Linux main user folder
 
 ### 2. Clone the Repository
 ```bash
-git clone <your-github-repository-url-here>  # Downloads a copy of the repository
-cd Naungayan_Jethro_labactivity1             # Enters the folder of the copy
+git clone https://github.com/20pesos/Naungayan_Jethro_labactivity1  # Downloads a copy of the repository
+cd Naungayan_Jethro_labactivity1                                    # Enters the folder of the copy
 ```
-
-***2.1.*** Project Structure
-
-Here is how the files are organized within this repository:
-
-<img src="README_visuals/Image6.png">
 
 ### 3. Create and Activate a Virtual Environment
 Because virtual environments are not tracked by Git, you must create a new one locally and activate it.
