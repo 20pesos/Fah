@@ -12,12 +12,6 @@ This repository reports the completion of Lab Activity 1. The activity focused o
 
 This README specifically explains how to run the activity starting from zero.
 
-## Project Structure
-
-Here is how the files are organized within this repository:
-
-<img src="README_visuals/Image6.png">
-
 ## Prerequisites
 
 This activity was done on Windows. To do the activity, our system must be configured with the necessary tools. 
@@ -60,6 +54,12 @@ cd ~  # Brings you to the Linux main user folder
 git clone <your-github-repository-url-here>  # Downloads a copy of the repository
 cd Naungayan_Jethro_labactivity1             # Enters the folder of the copy
 ```
+
+***2.1.*** Project Structure
+
+Here is how the files are organized within this repository:
+
+<img src="README_visuals/Image6.png">
 
 ### 3. Create and Activate a Virtual Environment
 Because virtual environments are not tracked by Git, you must create a new one locally and activate it.
