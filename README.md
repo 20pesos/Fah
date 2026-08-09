@@ -60,10 +60,16 @@ source .venv/bin/activate
 *(You will know it is active when your terminal line starts with `(.venv)`).*
 
 ### 4. Run the Main Program
-To test the Odd & Even Number Checker, run:
 ```bash
 python3 source/main.py
 ```
+Write an input and click enter.
+
+
+
+An example can be seen below:
+
+<img src="README_visuals/Image3.png">
 
 ### 5. Run the Automated Tests
 To run the automated `unittest` suite:
