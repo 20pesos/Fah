@@ -76,10 +76,13 @@ An example can be seen below:
 <img src="README_visuals/Image3.png">
 
 ### 5. Run the Automated Tests
-To run the automated `unittest` suite:
+
+Run the automated tests using unittest.
+
 ```bash
 python3 -m unittest tests/test.py
 ```
+<img src="README_visuals/Image5.png">
 
 ### 6. Deactivate the Environment
 When you are done, exit the virtual environment by typing:
