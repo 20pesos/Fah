@@ -8,42 +8,24 @@
 
 ## Overview
 
-This repository reports the completion of Lab Activity 1. The activity focused on creating a clean Python lab workspace in WSL, initializing a virtual environment, setting up a Git repository, and recording evidence of basic version control operations. To demonstrate the requirements, a command line application that checks whether an input is an odd or an even number was used as the Python program.
+This repository reports the completion of Lab Activity 2. The activity focused on storing and processing structured data using fundamental Python data types, specifically strings, lists, tuples, and dictionaries. To demonstrate the requirements, a menu-driven command line application was developed to create, read, update, and display student data in memory.
 
-This README specifically explains how to run the activity starting from zero.
+This README specifically explains how to run the activity.
 
-## Prerequisites
+## Prerequisites & Technologies
 
-This activity was done on Windows. To do the activity, our system must be configured with the necessary tools. 
+This activity was done on Windows. To run this project, you will need the following tools and services:
 
-<img src="README_visuals/Image2.png">
-
-Open Windows PowerShell as an Administrator (necessary for step 1) and run the following commands:
-
-**1. Install Windows Subsystem for Linux (WSL)**
-```powershell
-wsl --install -d Ubuntu
-```
-**2. Update Ubuntu Packages**
-```bash
-sudo apt update
-```
-**3. Install Python and Virtual Environment Tools**
-```bash
-sudo apt install python3 python3-venv -y
-```
-**4. Create Workspace and Open VS Code**
-```bash
-mkdir Naungayan_Jethro_labactivity1   # Creates the main project folder
-cd Naungayan_Jethro_labactivity1      # Moves your terminal inside the new folder
-code .                                # Opens this specific folder in VS Code
-```
+* **Operating System:** Windows Subsystem for Linux (WSL) running Ubuntu
+* **Language:** Python 3
+* **Environment Management:** `venv` (Python Virtual Environment)
+* **Version Control:** Git & GitHub
 
 ## Project Structure
 
 Here is how the files are organized within this repository:
 
-<img src="README_visuals/Image6.png">
+<img src="README_visuals/Image2.png">
 
 ## How to Run the Activity (for Windows Users)
 
@@ -57,8 +39,8 @@ cd ~  # Brings you to the Linux main user folder
 
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/20pesos/Naungayan_Jethro_labactivity1  # Downloads a copy of the repository
-cd Naungayan_Jethro_labactivity1                                    # Enters the folder of the copy
+git clone https://github.com/20pesos/Naungayan_Jethro_labactivity2  # Downloads a copy of the repository
+cd Naungayan_Jethro_labactivity2                                    # Enters the folder of the copy
 ```
 
 ### 3. Create and Activate a Virtual Environment
@@ -73,25 +55,24 @@ source .venv/bin/activate
 ```bash
 python3 source/main.py
 ```
-Write an input and click enter.
 
-<img src="README_visuals/Image4.png">
-
-An example can be seen below:
+#### 4.1. Program Features
+Once running, the system presents a numbered menu to perform CRUD operations (Create, Read, Update, Display).
 
 <img src="README_visuals/Image3.png">
 
-### 5. Run the Automated Tests
+The data is stored temporarily in an in-memory dictionary while the program is active, utilizing nested dictionaries, lists for subjects, and tuples for fixed institutional data.
 
-Run the automated tests using unittest.
-
-```bash
-python3 -m unittest tests/test.py
-```
-<img src="README_visuals/Image5.png">
+#### 4.2. Fail-Proof Validation Features
+To prevent crashes and bad data, the program is strictly locked down with the following rules:
+*   **Empty Input Traps:** Infinite loops prevent users from leaving required fields blank.
+*   **Strict ID Formatting:** Rejects any Student ID that is not exactly 4 numerical digits.
+*   **Name Character Checking:** Rejects names containing numbers or unsupported symbols.
+*   **Duplicate Prevention:** Scans the database to block identical Student IDs and duplicate email addresses.
+*   **Safe Updates:** When modifying a record, pressing 'Enter' safely retains the old data without overwriting it.
 
 ### 6. Deactivate the Environment
-When you are done, exit the virtual environment by typing:
+When you are done testing the application, exit the virtual environment by typing:
 ```bash
 deactivate
 ```
